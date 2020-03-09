@@ -4,3 +4,51 @@
 
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+
+  width: 360px;
+  height: 750px;
+
+  transform: rotate(-30deg) skew(25deg) scale(0.5);
+  transition: 0.5s;
+
+  border-radius: 40px;
+
+  background-color: #00000048;
+}
+
+.card img {
+  position: absolute;
+
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.card:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+
+.card:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+
+.card:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
